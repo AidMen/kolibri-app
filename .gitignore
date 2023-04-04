@@ -9,7 +9,6 @@ src/__generated__
 .project
 *.sublime-*
 *.code-*
-.vscode
 
 
 # Node.js
