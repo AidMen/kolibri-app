@@ -5,11 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Kolibri via NPM",
             "type": "node",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "skipFiles": ["<node_internals>/**"],
-            "program": "${workspaceFolder}\\react.main.tsx"
+            "cwd": "${workspaceRoot}",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run-script", "start"
+            ]
         }
     ]
 }
